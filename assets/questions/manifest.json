@@ -1,0 +1,119 @@
+{
+  "render_dpi": 288,
+  "raster_pixels_per_pdf_point": 4,
+  "css_pixels_per_pdf_point": 2,
+  "coordinate_system": "PDF points from page top-left",
+  "sources": [
+    {
+      "set": 3,
+      "filename": "CE2407A Tutorial Questions Set 3.pdf",
+      "sha256": "7da1c41992e1122fcb5eede4091587f405718fa5f896211634f7c3438780ea4a"
+    }
+  ],
+  "snapshots": [
+    {
+      "file": "set3-q2.png",
+      "set": 3,
+      "question": 2,
+      "page": 1,
+      "slide_id": "question-t3-q2",
+      "bbox_pt": [
+        68,
+        332,
+        544,
+        401
+      ],
+      "position_css": [
+        98,
+        132
+      ],
+      "alt": "Tutorial Set 3, Question 2. A researcher wants to estimate the mean time a mechanic takes to rotate a car’s tires. She wants 95% confidence that the sample mean is within 0.5 minute of the population mean. From past experience the population standard deviation is 1.6 minutes. How large a sample must she take?",
+      "dimensions_css": [
+        952,
+        138
+      ],
+      "dimensions_px": [
+        1904,
+        276
+      ]
+    },
+    {
+      "file": "set3-q3.png",
+      "set": 3,
+      "question": 3,
+      "page": 1,
+      "slide_id": "question-t3-q3",
+      "bbox_pt": [
+        68,
+        438,
+        544,
+        587
+      ],
+      "position_css": [
+        98,
+        132
+      ],
+      "alt": "Tutorial Set 3, Question 3. A structure will rest on 100 piles. Nine test piles at random locations in the supporting soil were loaded to failure. Their capacities were 82, 75, 95, 90, 88, 92, 78, 85 and 80 tonnes. Assume a normal population. (a) Estimate the mean and variance of pile capacity at the site. (b) Find the 95% confidence interval for mean pile capacity, treating population variance as known and equal to the sample variance. (c) Find the 95% confidence interval for the mean when population variance is unknown.",
+      "dimensions_css": [
+        952,
+        298
+      ],
+      "dimensions_px": [
+        1904,
+        596
+      ]
+    },
+    {
+      "file": "set3-q4.png",
+      "set": 3,
+      "question": 4,
+      "page": 1,
+      "slide_id": "question-t3-q4",
+      "bbox_pt": [
+        68,
+        613,
+        544,
+        710
+      ],
+      "position_css": [
+        98,
+        132
+      ],
+      "alt": "Tutorial Set 3, Question 4. Ten ocean wave periods in seconds were measured as 7.9, 6.5, 11.9, 8.9, 10.7, 7.7, 13.7, 11.4, 9.7 and 7.0. Assume a normal population. At the 0.05 significance level, test the null hypothesis that the mean period is 11 seconds against the alternative that it differs from 11 seconds.",
+      "dimensions_css": [
+        952,
+        194
+      ],
+      "dimensions_px": [
+        1904,
+        388
+      ]
+    },
+    {
+      "file": "set3-q5.png",
+      "set": 3,
+      "question": 5,
+      "page": 2,
+      "slide_id": "question-t3-q5",
+      "bbox_pt": [
+        68,
+        85,
+        544,
+        178
+      ],
+      "position_css": [
+        98,
+        132
+      ],
+      "alt": "Tutorial Set 3, Question 5. A bus company claims the standard deviation of bus arrival-time deviations is at most 1.5 minutes. Observations of one bus per day on the way to NUS over 20 mornings gave a sample standard deviation of 1.95 minutes. At the 0.05 significance level, test the boundary value of 1.5 minutes against a population standard deviation greater than 1.5 minutes.",
+      "dimensions_css": [
+        952,
+        186
+      ],
+      "dimensions_px": [
+        1904,
+        372
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "source": "Tutorial 5_2025.pptx",
+  "snapshots": [
+    {
+      "question": 2,
+      "title": "Determination of sample size",
+      "slide_numbers": [
+        3
+      ],
+      "source_part": "ppt/media/image3.png",
+      "asset": "assets/lecture-notes/set3-q2-sample-size.png",
+      "size_px": [
+        931,
+        653
+      ],
+      "placement_emu": [
+        986904,
+        1497873,
+        7170191,
+        5029146
+      ],
+      "sha256": "167e395c054ff119ac17609aa49480d7b831a1a348c9e4a304390bfcaca79f40",
+      "alt": "For a known population standard deviation, the interval half-width is the two-sided normal critical value times sigma divided by the square root of n. Solving for n gives the square of the critical value times sigma divided by the requested error."
+    },
+    {
+      "question": 3,
+      "title": "Confidence interval for a mean with known variance",
+      "slide_numbers": [
+        5,
+        8
+      ],
+      "source_part": "ppt/media/image5.png",
+      "asset": "assets/lecture-notes/set3-q3-known-variance.png",
+      "size_px": [
+        697,
+        522
+      ],
+      "placement_emu": [
+        1270330,
+        1343274,
+        6639852,
+        4972744
+      ],
+      "sha256": "bc087b54d9293b53d34f7330cabf230a63520acec90f5f0fc23b2dfc9a4a2d8d",
+      "alt": "Normal confidence interval for a population mean with known variance. The endpoints are the sample mean plus or minus the normal critical value times sigma divided by the square root of n. The normal curve has area alpha over two shaded in each tail."
+    },
+    {
+      "question": 3,
+      "title": "Confidence interval for a mean with unknown variance",
+      "slide_numbers": [
+        10
+      ],
+      "source_part": "ppt/media/image6.png",
+      "asset": "assets/lecture-notes/set3-q3-unknown-variance.png",
+      "size_px": [
+        656,
+        499
+      ],
+      "placement_emu": [
+        1465620,
+        1291720,
+        6249272,
+        4753638
+      ],
+      "sha256": "ce8291bd8f1c6247b7a914737c321f262893cdee70b06211789a635c9b3da632",
+      "alt": "For a normal population of unknown variance, the endpoints are the sample mean plus or minus the t critical value times S divided by the square root of n. Each shaded tail contains alpha over two. The t critical value approaches the normal critical value as n increases."
+    },
+    {
+      "question": 4,
+      "title": "Hypothesis test for a mean",
+      "slide_numbers": [
+        12
+      ],
+      "source_part": "ppt/media/image8.png",
+      "asset": "assets/lecture-notes/set3-q4-mean-test.png",
+      "size_px": [
+        749,
+        535
+      ],
+      "placement_emu": [
+        1004389,
+        1442326,
+        7135221,
+        5096586
+      ],
+      "sha256": "2be5a540119983fdc7058cf1176a59facd00316cb87372b38bc0035c2734a32f",
+      "alt": "For a normal population with unknown variance, t equals the difference between the sample mean and the hypothesized mean divided by S over the square root of n. A table relates lower-, upper- and two-sided alternatives to their rejection regions. For the two-sided alternative reject below minus t critical or above plus t critical with alpha over two in each tail."
+    },
+    {
+      "question": 5,
+      "title": "Hypothesis test for a variance",
+      "slide_numbers": [
+        15
+      ],
+      "source_part": "ppt/media/image10.png",
+      "asset": "assets/lecture-notes/set3-q5-variance-test.png",
+      "size_px": [
+        597,
+        759
+      ],
+      "placement_emu": [
+        1874881,
+        0,
+        5394237,
+        6858000
+      ],
+      "sha256": "1b08cdd17d2a9bdba1c043a8ccaaf4b8bb8e9a49faf27851fa5540608dd28785",
+      "alt": "The upper panel lists lower-, upper- and two-tailed chi-square rejection regions for testing a normal population variance. The lower panel applies the upper-tailed test to the variation in silicon wafer thickness.",
+      "panels": [
+        {
+          "title": "Critical regions",
+          "asset": "assets/lecture-notes/set3-q5-critical-regions.png",
+          "bounds_px": [
+            0,
+            0,
+            597,
+            376
+          ],
+          "size_px": [
+            597,
+            376
+          ],
+          "alt": "Chi-square rejection regions for a normal population with hypothesized variance sigma zero squared. The lower-tailed alternative rejects in the lower alpha tail, the upper-tailed alternative rejects in the upper alpha tail, and a two-sided alternative places alpha over two in each tail. The subscripts in the table denote upper-tail probabilities."
+        },
+        {
+          "title": "Wafer thickness example",
+          "asset": "assets/lecture-notes/set3-q5-wafer-example.png",
+          "bounds_px": [
+            0,
+            376,
+            597,
+            759
+          ],
+          "size_px": [
+            597,
+            383
+          ],
+          "alt": "Worked upper-tailed test for silicon wafer thickness. The claimed standard deviation is 0.50 mil. Fifteen measurements give S = 0.64 mil. At the 5% level the critical value is 23.685 with 14 degrees of freedom. The statistic is 22.94, giving insufficient evidence that the variability exceeds the limit."
+        }
+      ]
+    }
+  ]
+}

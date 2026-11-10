@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CE2407A Tutorial 5: sample size, confidence intervals and hypothesis tests. Tutorial Set 3, Questions 2–5.">
+  <title>Tutorial 5 · CE2407A</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="reveal.css">
+  <link rel="stylesheet" href="annotations.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="question-viewer.css">
+</head>
+<body>
+<nav class="study-controls" aria-label="Study controls">
+  <div class="question-navigation">
+    <button id="question-menu-toggle" type="button" aria-expanded="false" aria-controls="question-menu" aria-label="Choose section"><span id="current-question">Sections</span><span aria-hidden="true">▾</span></button>
+    <nav id="question-menu" class="question-menu" aria-label="Section navigation" hidden>
+      <a class="menu-home" href="#/slide-1">Tutorial 5</a>
+      <div class="question-menu-row"><span>T3 Q2 <small>Tire rotation times</small></span><a href="#/question-t3-q2" aria-label="T3 Q2 question">Question</a><a href="#/notes-t3-q2" aria-label="T3 Q2 notes">Notes</a><a href="#/explore-t3-q2" aria-label="T3 Q2 explore">Explore</a></div>
+      <div class="question-menu-row"><span>T3 Q3 <small>Pile capacities</small></span><a href="#/question-t3-q3" aria-label="T3 Q3 question">Question</a><a href="#/notes-t3-q3" aria-label="T3 Q3 notes">Notes</a><a href="#/explore-t3-q3" aria-label="T3 Q3 explore">Explore</a></div>
+      <div class="question-menu-row"><span>T3 Q4 <small>Ocean wave periods</small></span><a href="#/question-t3-q4" aria-label="T3 Q4 question">Question</a><a href="#/notes-t3-q4" aria-label="T3 Q4 notes">Notes</a><a href="#/explore-t3-q4" aria-label="T3 Q4 explore">Explore</a></div>
+      <div class="question-menu-row"><span>T3 Q5 <small>Bus arrival times</small></span><a href="#/question-t3-q5" aria-label="T3 Q5 question">Question</a><a href="#/notes-t3-q5" aria-label="T3 Q5 notes">Notes</a><a href="#/explore-t3-q5" aria-label="T3 Q5 explore">Explore</a></div>
+      <a class="menu-home" href="#/notes-t3-q3-unknown">Q3(c) · Unknown variance</a>
+      <a class="menu-home" href="#/notes-t3-q5-wafer">Q5 · Wafer example</a>
+    </nav>
+  </div>
+  <div class="study-actions">
+    <button id="view-question" type="button" hidden>View larger</button>
+    <a id="open-exercise" href="https://jiaruilei.github.io/CE2407A_Tutorial3/" target="_blank" rel="noopener">Open exercises</a>
+  </div>
+</nav>
+<main class="reveal" aria-label="CE2407A Tutorial 5 presentation">
+  <div class="slides">
+    <section id="slide-1" class="cover" data-title="Tutorial 5" aria-label="Slide 1: Tutorial 5">
+      <a class="cover-qr" href="https://jiaruilei.github.io/CE2407A-Tutorial5-Slides/#/slide-1" aria-label="Open the tutorial slides">
+        <img src="assets/tutorial-slides-qr.svg" width="400" height="400" alt="QR code linking to these Tutorial 5 slides" draggable="false">
+        <span>Open the slides</span>
+      </a>
+      <div class="cover-copy">
+        <p class="course-code">CE2407A</p>
+        <h1>Tutorial 5</h1>
+        <p class="cover-topic">Tutorial Set 3<br>Questions 2–5</p>
+        <p class="cover-week">Week 13</p>
+        <p class="cover-author">Assistant Professor Lei Jiarui, Gary<br>Civil and Environmental Engineering<br>National University of Singapore</p>
+      </div>
+    </section>
+    <section id="question-t3-q2" class="question-statement" data-question="2" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2" data-title="Tutorial Set 3 · Question 2" aria-label="Slide 2: Tutorial Set 3 · Question 2">
+      <h1 class="slide-heading">Tutorial Set 3 · Question 2</h1>
+      <img class="question-crop" src="assets/questions/set3-q2.png" width="952" height="138" style="left:98px;top:132px;width:952px;height:138px" alt="Tutorial Set 3, Question 2. A researcher wants to estimate the mean time a mechanic takes to rotate a car’s tires. She wants 95% confidence that the sample mean is within 0.5 minute of the population mean. From past experience the population standard deviation is 1.6 minutes. How large a sample must she take?" draggable="false">
+      <aside class="notes">Which number is the allowed error? A half-width of 0.5 minute corresponds to a full interval width of 1 minute. With known σ = 1.6 minutes, n ≥ (1.95996 × 1.6 / 0.5)² = 39.3365. Round up to 40 tire rotations; 39 would miss the target.</aside>
+    </section>
+    <section id="notes-t3-q2" class="question-statement lecture-notes" data-question="2" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2" data-title="Q2 · Choosing the sample size" aria-label="Slide 3: Q2 · Choosing the sample size">
+      <h1 class="slide-heading">Q2 · Choosing the sample size</h1>
+      <img class="question-crop" src="assets/lecture-notes/set3-q2-sample-size.png" width="741" height="520" style="left:98px;top:132px;width:741px;height:520px" alt="For a known population standard deviation, the interval half-width is the two-sided normal critical value times sigma divided by the square root of n. Solving for n gives the square of the critical value times sigma divided by the requested error." draggable="false">
+      <aside class="notes">Identify the margin E, then rearrange the normal interval half-width before substituting values.</aside>
+    </section>
+    <section id="explore-t3-q2" data-question="2" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2" data-title="T3 Q2 · Tire rotation times" aria-label="Slide 4: T3 Q2 · Tire rotation times">
+      <h1 class="slide-heading">T3 Q2 · Tire rotation times</h1>
+      <div class="web-panel">
+        <div class="web-toolbar">
+          <span class="web-label">Tutorial Set 3 · Question 2</span>
+          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
+          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Reloads the exercise and clears its chat.</p><button class="reload-web" type="button">Reload exercise</button></div></details>
+        </div>
+        <div class="web-viewport">
+          <div class="web-loading" role="status">Loading question…</div>
+          <iframe title="Tutorial Set 3 Question 2: Tire rotation times" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+      <aside class="notes">Round up to 40. Its margin is 0.496 minute, while 39 gives 0.502 minute.</aside>
+    </section>
+    <section id="question-t3-q3" class="question-statement" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Tutorial Set 3 · Question 3" aria-label="Slide 5: Tutorial Set 3 · Question 3">
+      <h1 class="slide-heading">Tutorial Set 3 · Question 3</h1>
+      <img class="question-crop" src="assets/questions/set3-q3.png" width="952" height="298" style="left:98px;top:132px;width:952px;height:298px" alt="Tutorial Set 3, Question 3. A structure will rest on 100 piles. Nine test piles at random locations in the supporting soil were loaded to failure. Their capacities were 82, 75, 95, 90, 88, 92, 78, 85 and 80 tonnes. Assume a normal population. (a) Estimate the mean and variance of pile capacity at the site. (b) Find the 95% confidence interval for mean pile capacity, treating population variance as known and equal to the sample variance. (c) Find the 95% confidence interval for the mean when population variance is unknown." draggable="false">
+      <aside class="notes">The sample consists of nine test piles; 100 is the number of piles in the structure. Their capacities sum to 765 tonnes. The sample mean is 85 tonnes, and the sample variance is 45.75 tonnes² (divide the sum of squared deviations by eight). For (b), treat 45.75 as known; for (c), it is an estimate from the sample.</aside>
+    </section>
+    <section id="notes-t3-q3" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(b) · Mean with known variance" aria-label="Slide 6: Q3(b) · Mean with known variance">
+      <h1 class="slide-heading">Q3(b) · Mean with known variance</h1>
+      <img class="question-crop" src="assets/lecture-notes/set3-q3-known-variance.png" width="694" height="520" style="left:98px;top:132px;width:694px;height:520px" alt="Normal confidence interval for a population mean with known variance. The endpoints are the sample mean plus or minus the normal critical value times sigma divided by the square root of n. The normal curve has area alpha over two shaded in each tail." draggable="false">
+      <aside class="notes">Use the normal critical value 1.960 because part (b) tells us to treat the population variance as known. The standard error is √45.75 / 3 tonnes.</aside>
+    </section>
+    <section id="notes-t3-q3-unknown" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(c) · Mean with unknown variance" aria-label="Slide 7: Q3(c) · Mean with unknown variance">
+      <h1 class="slide-heading">Q3(c) · Mean with unknown variance</h1>
+      <img class="question-crop" src="assets/lecture-notes/set3-q3-unknown-variance.png" width="684" height="520" style="left:98px;top:132px;width:684px;height:520px" alt="For a normal population of unknown variance, the endpoints are the sample mean plus or minus the t critical value times S divided by the square root of n. Each shaded tail contains alpha over two. The t critical value approaches the normal critical value as n increases." draggable="false">
+      <aside class="notes">When the variance is estimated, use t with eight degrees of freedom. The 97.5th percentile is 2.306, compared with 1.960 for the normal distribution.</aside>
+    </section>
+    <section id="explore-t3-q3" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="T3 Q3 · Pile capacities" aria-label="Slide 8: T3 Q3 · Pile capacities">
+      <h1 class="slide-heading">T3 Q3 · Pile capacities</h1>
+      <div class="web-panel">
+        <div class="web-toolbar">
+          <span class="web-label">Tutorial Set 3 · Question 3</span>
+          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
+          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Reloads the exercise and clears its chat.</p><button class="reload-web" type="button">Reload exercise</button></div></details>
+        </div>
+        <div class="web-viewport">
+          <div class="web-loading" role="status">Loading question…</div>
+          <iframe title="Tutorial Set 3 Question 3: Pile capacities" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+      <aside class="notes">The standard error is 2.25462 tonnes in both cases. The known-variance 95% z interval is (80.58, 89.42) tonnes. The unknown-variance t interval, with eight degrees of freedom, is (79.80, 90.20) tonnes. Ask why the second interval is wider.</aside>
+    </section>
+    <section id="question-t3-q4" class="question-statement" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Tutorial Set 3 · Question 4" aria-label="Slide 9: Tutorial Set 3 · Question 4">
+      <h1 class="slide-heading">Tutorial Set 3 · Question 4</h1>
+      <img class="question-crop" src="assets/questions/set3-q4.png" width="952" height="194" style="left:98px;top:132px;width:952px;height:194px" alt="Tutorial Set 3, Question 4. Ten ocean wave periods in seconds were measured as 7.9, 6.5, 11.9, 8.9, 10.7, 7.7, 13.7, 11.4, 9.7 and 7.0. Assume a normal population. At the 0.05 significance level, test the null hypothesis that the mean period is 11 seconds against the alternative that it differs from 11 seconds." draggable="false">
+      <aside class="notes">Ask which alternative is appropriate before looking at the sample. The question asks whether the mean differs from 11 s, so use both tails. For 10 independent observations from a normal population with unknown variance, use Student’s t with nine degrees of freedom.</aside>
+    </section>
+    <section id="notes-t3-q4" class="question-statement lecture-notes" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Q4 · Testing the mean wave period" aria-label="Slide 10: Q4 · Testing the mean wave period">
+      <h1 class="slide-heading">Q4 · Testing the mean wave period</h1>
+      <img class="question-crop" src="assets/lecture-notes/set3-q4-mean-test.png" width="728" height="520" style="left:98px;top:132px;width:728px;height:520px" alt="For a normal population with unknown variance, t equals the difference between the sample mean and the hypothesized mean divided by S over the square root of n. A table relates lower-, upper- and two-sided alternatives to their rejection regions. For the two-sided alternative reject below minus t critical or above plus t critical with alpha over two in each tail." draggable="false">
+      <aside class="notes">Use the two-sided row. Split 0.05 between the two tails, then compare t = −1.961 with −2.262 and 2.262.</aside>
+    </section>
+    <section id="explore-t3-q4" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="T3 Q4 · Ocean wave periods" aria-label="Slide 11: T3 Q4 · Ocean wave periods">
+      <h1 class="slide-heading">T3 Q4 · Ocean wave periods</h1>
+      <div class="web-panel">
+        <div class="web-toolbar">
+          <span class="web-label">Tutorial Set 3 · Question 4</span>
+          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
+          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Reloads the exercise and clears its chat.</p><button class="reload-web" type="button">Reload exercise</button></div></details>
+        </div>
+        <div class="web-viewport">
+          <div class="web-loading" role="status">Loading question…</div>
+          <iframe title="Tutorial Set 3 Question 4: Ocean wave periods" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+      <aside class="notes">The mean is 9.54 s, the sample standard deviation is 2.35429 s and the standard error is 0.74449 s. The test statistic is −1.961 with nine degrees of freedom. The critical values are ±2.262 and the two-sided p-value is 0.0815. At 5%, the data do not give sufficient evidence that the population mean differs from 11 s.</aside>
+    </section>
+    <section id="question-t3-q5" class="question-statement" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Tutorial Set 3 · Question 5" aria-label="Slide 12: Tutorial Set 3 · Question 5">
+      <h1 class="slide-heading">Tutorial Set 3 · Question 5</h1>
+      <img class="question-crop" src="assets/questions/set3-q5.png" width="952" height="186" style="left:98px;top:132px;width:952px;height:186px" alt="Tutorial Set 3, Question 5. A bus company claims the standard deviation of bus arrival-time deviations is at most 1.5 minutes. Observations of one bus per day on the way to NUS over 20 mornings gave a sample standard deviation of 1.95 minutes. At the 0.05 significance level, test the boundary value of 1.5 minutes against a population standard deviation greater than 1.5 minutes." draggable="false">
+      <aside class="notes">Does the bus company claim something about the mean or the spread? Test the boundary σ = 1.5 minutes against σ &gt; 1.5 minutes. The exact chi-square test assumes independent observations from a normal population.</aside>
+    </section>
+    <section id="notes-t3-q5" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Testing a population variance" aria-label="Slide 13: Q5 · Testing a population variance">
+      <h1 class="slide-heading">Q5 · Testing a population variance</h1>
+      <img class="question-crop" src="assets/lecture-notes/set3-q5-critical-regions.png" width="826" height="520" style="left:98px;top:132px;width:826px;height:520px" alt="Chi-square rejection regions for a normal population with hypothesized variance sigma zero squared. The lower-tailed alternative rejects in the lower alpha tail, the upper-tailed alternative rejects in the upper alpha tail, and a two-sided alternative places alpha over two in each tail. The subscripts in the table denote upper-tail probabilities." draggable="false">
+      <aside class="notes">Use the upper-tailed row because the alternative is greater variability. In this table subscripts label upper-tail probabilities.</aside>
+    </section>
+    <section id="notes-t3-q5-wafer" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Comparison: wafer thickness" aria-label="Slide 14: Q5 · Comparison: wafer thickness">
+      <h1 class="slide-heading">Q5 · Comparison: wafer thickness</h1>
+      <img class="question-crop" src="assets/lecture-notes/set3-q5-wafer-example.png" width="811" height="520" style="left:98px;top:132px;width:811px;height:520px" alt="Worked upper-tailed test for silicon wafer thickness. The claimed standard deviation is 0.50 mil. Fifteen measurements give S = 0.64 mil. At the 5% level the critical value is 23.685 with 14 degrees of freedom. The statistic is 22.94, giving insufficient evidence that the variability exceeds the limit." draggable="false">
+      <aside class="notes">This lecture example concerns wafers, not buses. Its statistic 22.94 falls below its cutoff 23.685, so it does not reject the null. Next apply the same test to the 20 bus arrival-time deviations and compare the decision.</aside>
+    </section>
+    <section id="explore-t3-q5" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="T3 Q5 · Bus arrival times" aria-label="Slide 15: T3 Q5 · Bus arrival times">
+      <h1 class="slide-heading">T3 Q5 · Bus arrival times</h1>
+      <div class="web-panel">
+        <div class="web-toolbar">
+          <span class="web-label">Tutorial Set 3 · Question 5</span>
+          <button class="expand-web" type="button" aria-expanded="false">Enlarge exercise</button>
+          <details class="exercise-options"><summary>More</summary><div class="exercise-menu"><p>Reloads the exercise and clears its chat.</p><button class="reload-web" type="button">Reload exercise</button></div></details>
+        </div>
+        <div class="web-viewport">
+          <div class="web-loading" role="status">Loading question…</div>
+          <iframe title="Tutorial Set 3 Question 5: Bus arrival times" data-web-src="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5&amp;embed=1" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+      <aside class="notes">Square both standard deviations: χ² = 19 × (1.95 / 1.50)² = 32.11, with 19 degrees of freedom. The upper 5% cutoff is 30.144; p = 0.0304. Reject the null. The data provide evidence that the population standard deviation exceeds 1.5 minutes.</aside>
+    </section>
+  </div>
+</main>
+<nav class="deck-controls" aria-label="Presentation controls">
+  <button id="previous" type="button" aria-label="Previous slide" title="Previous (Left arrow)">‹</button>
+  <span id="counter" aria-live="polite">1 / 15</span>
+  <button id="next" type="button" aria-label="Next slide" title="Next (Right arrow)">›</button>
+  <span class="divider" aria-hidden="true"></span>
+  <button id="ink-toggle" type="button" aria-expanded="false" aria-controls="ink-toolbar" title="Annotation tools">Ink</button>
+  <button id="overview" type="button" title="Slide overview (O)">Overview</button>
+  <button id="fullscreen" type="button" title="Full screen (F)">Full screen</button>
+</nav>
+<div id="ink-toolbar" class="ink-toolbar" role="toolbar" aria-label="Annotation tools" hidden>
+  <div class="ink-tools" role="group" aria-label="Drawing tool">
+    <button type="button" data-ink-tool="pointer" aria-pressed="true" title="Use the interactive questions (Escape)">Pointer</button>
+    <button type="button" data-ink-tool="pen" aria-pressed="false" title="Draw with a pen">Pen</button>
+    <button type="button" data-ink-tool="highlighter" aria-pressed="false" title="Highlight without covering the text">Highlighter</button>
+    <button type="button" data-ink-tool="eraser" aria-pressed="false" title="Erase a whole stroke">Eraser</button>
+  </div>
+  <div class="ink-colors" role="group" aria-label="Ink color">
+    <button type="button" class="ink-color" data-ink-color="#e53935" style="--swatch:#e53935" aria-label="Red ink" aria-pressed="true" title="Red"></button>
+    <button type="button" class="ink-color" data-ink-color="#2563eb" style="--swatch:#2563eb" aria-label="Blue ink" aria-pressed="false" title="Blue"></button>
+    <button type="button" class="ink-color" data-ink-color="#172b4d" style="--swatch:#172b4d" aria-label="Dark ink" aria-pressed="false" title="Dark"></button>
+    <button type="button" class="ink-color" data-ink-color="#16834a" style="--swatch:#16834a" aria-label="Green ink" aria-pressed="false" title="Green"></button>
+    <button type="button" class="ink-color" data-ink-color="#ffd43b" style="--swatch:#ffd43b" aria-label="Yellow ink" aria-pressed="false" title="Yellow"></button>
+    <button type="button" class="ink-color" data-ink-color="#ffffff" style="--swatch:#ffffff" aria-label="White ink" aria-pressed="false" title="White"></button>
+  </div>
+  <select id="ink-width" aria-label="Ink thickness" title="Ink thickness">
+    <option value="2">Thin</option><option value="4" selected>Medium</option><option value="7">Thick</option>
+  </select>
+  <div class="ink-history" role="group" aria-label="Edit ink">
+    <button id="ink-undo" type="button" title="Undo ink (Ctrl+Z)" disabled>Undo</button>
+    <button id="ink-redo" type="button" title="Redo ink (Ctrl+Y)" disabled>Redo</button>
+    <button id="ink-clear" type="button" title="Clear ink in this view. Undo restores it." disabled>Clear ink</button>
+  </div>
+  <span id="ink-status" class="ink-sr-only" role="status" aria-live="polite"></span>
+</div>
+<div id="notice" role="status" hidden></div>
+<script src="reveal.js"></script>
+<script type="module" src="presentation.js"></script>
+</body>
+</html>

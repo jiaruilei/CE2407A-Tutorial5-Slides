@@ -24,6 +24,7 @@
       <a class="menu-home" href="#/notes-t3-q3-unknown">Q3(c) · Unknown variance</a>
       <a class="menu-home" href="#/notes-t3-q3-t-table">Q3(c) · t-value table</a>
       <a class="menu-home" href="#/notes-t3-q4-t-table">Q4 · t-value table</a>
+      <a class="menu-home" href="#/notes-t3-q5-chi-square-table">Q5 · Chi-square table</a>
       <a class="menu-home" href="#/notes-t3-q5-wafer">Q5 · Wafer example</a>
     </nav>
   </div>
@@ -152,7 +153,12 @@
       <img class="question-crop" src="assets/lecture-notes/set3-q5-wafer-example.png" width="811" height="520" style="left:98px;top:132px;width:811px;height:520px" alt="Worked upper-tailed test for silicon wafer thickness. The claimed standard deviation is 0.50 mil. Fifteen measurements give S = 0.64 mil. At the 5% level the critical value is 23.685 with 14 degrees of freedom. The statistic is 22.94, giving insufficient evidence that the variability exceeds the limit." draggable="false">
       <aside class="notes">This lecture example concerns wafers, not buses. Its statistic 22.94 falls below its cutoff 23.685, so it does not reject the null. Next apply the same test to the 20 bus arrival-time deviations and compare the decision.</aside>
     </section>
-    <section id="explore-t3-q5" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="T3 Q5 · Bus arrival times" aria-label="Slide 17: T3 Q5 · Bus arrival times">
+    <section id="notes-t3-q5-chi-square-table" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Chi-square table" aria-label="Slide 17: Q5 chi-square table">
+      <h1 class="slide-heading">Q5 · Chi-square critical-value table</h1>
+      <img class="question-crop" src="assets/tables/chi-square-table-q5.svg" width="1084" height="550" style="left:98px;top:126px;width:1084px;height:550px" alt="Chi-square critical values for degrees of freedom 1–30 and selected upper-tail probabilities 0.95, 0.05, 0.025, 0.01 and 0.005. For Q5, n = 20, so df = 19. The highlighted row 19 and column 0.05 meet at the critical value 30.144. This is a one-sided test, so the entire significance level 0.05 is in the upper tail. Reject when the test statistic exceeds 30.144." draggable="false">
+      <aside class="notes">Source: CE2407A Statistical tables.pdf, page 3, Table 5. Selected degrees of freedom 1–30 and five upper-tail probability columns are shown. Values are checked against the chi-square distribution; corrections to the printed source are recorded in assets/tables/chi-square.json. For the normal-population variance test in Q5, the alternative is σ &gt; 1.5 minutes, so use the right tail. With n = 20, df = n − 1 = 19, and the upper-tail probability is 0.05. Read the critical value 30.144. The observed statistic 19(1.95/1.5)² = 32.11 exceeds the cutoff. Use View larger to magnify the table. The complete original table is linked in the README.</aside>
+    </section>
+    <section id="explore-t3-q5" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="T3 Q5 · Bus arrival times" aria-label="Slide 18: T3 Q5 · Bus arrival times">
       <h1 class="slide-heading">T3 Q5 · Bus arrival times</h1>
       <div class="web-panel">
         <div class="web-toolbar">
@@ -171,7 +177,7 @@
 </main>
 <nav class="deck-controls" aria-label="Presentation controls">
   <button id="previous" type="button" aria-label="Previous slide" title="Previous (Left arrow)">‹</button>
-  <span id="counter" aria-live="polite">1 / 17</span>
+  <span id="counter" aria-live="polite">1 / 18</span>
   <button id="next" type="button" aria-label="Next slide" title="Next (Right arrow)">›</button>
   <span class="divider" aria-hidden="true"></span>
   <button id="ink-toggle" type="button" aria-expanded="false" aria-controls="ink-toolbar" title="Annotation tools">Ink</button>

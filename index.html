@@ -21,6 +21,8 @@
       <div class="question-menu-row"><span>T3 Q3 <small>Pile capacities</small></span><a href="#/question-t3-q3" aria-label="T3 Q3 question">Question</a><a href="#/notes-t3-q3" aria-label="T3 Q3 notes">Notes</a><a href="#/explore-t3-q3" aria-label="T3 Q3 explore">Explore</a></div>
       <div class="question-menu-row"><span>T3 Q4 <small>Ocean wave periods</small></span><a href="#/question-t3-q4" aria-label="T3 Q4 question">Question</a><a href="#/notes-t3-q4" aria-label="T3 Q4 notes">Notes</a><a href="#/explore-t3-q4" aria-label="T3 Q4 explore">Explore</a></div>
       <div class="question-menu-row"><span>T3 Q5 <small>Bus arrival times</small></span><a href="#/question-t3-q5" aria-label="T3 Q5 question">Question</a><a href="#/notes-t3-q5" aria-label="T3 Q5 notes">Notes</a><a href="#/explore-t3-q5" aria-label="T3 Q5 explore">Explore</a></div>
+      <a class="menu-home" href="#/notes-t3-q2-z-table">Q2 · z-value table</a>
+      <a class="menu-home" href="#/notes-t3-q3-z-table">Q3(b) · z-value table</a>
       <a class="menu-home" href="#/notes-t3-q3-unknown">Q3(c) · Unknown variance</a>
       <a class="menu-home" href="#/notes-t3-q3-t-table">Q3(c) · t-value table</a>
       <a class="menu-home" href="#/notes-t3-q4-t-table">Q4 · t-value table</a>
@@ -58,7 +60,12 @@
       <img class="question-crop" src="assets/lecture-notes/set3-q2-sample-size.png" width="741" height="520" style="left:98px;top:132px;width:741px;height:520px" alt="For a known population standard deviation, the interval half-width is the two-sided normal critical value times sigma divided by the square root of n. Solving for n gives the square of the critical value times sigma divided by the requested error." draggable="false">
       <aside class="notes">Identify the margin E, then rearrange the normal interval half-width before substituting values.</aside>
     </section>
-    <section id="explore-t3-q2" data-question="2" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2" data-title="T3 Q2 · Tire rotation times" aria-label="Slide 4: T3 Q2 · Tire rotation times">
+    <section id="notes-t3-q2-z-table" class="question-statement lecture-notes" data-question="2" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2" data-title="Q2 · z-value table" aria-label="Slide 4: Q2 z-value table">
+      <h1 class="slide-heading">Q2 · Standard normal z-value table</h1>
+      <img class="question-crop" src="assets/tables/z-table-q2.svg" width="1084" height="550" style="left:98px;top:126px;width:1084px;height:550px" alt="Standard normal cumulative probabilities Φ(z) = P(Z ≤ z), excerpt with row labels 1.0–2.4 and column offsets 0.00–0.09. Highlighted row 1.9 plus column 0.06 gives z = 1.96; the intersection is 0.9750. Thus the upper tail is 0.025, giving a central probability of approximately 0.95 between −1.96 and +1.96. Q2 uses this normal critical value." draggable="false">
+      <aside class="notes">Source convention and lookup: CE2407A Statistical tables.pdf, page 1, Standard Normal Distribution Function. Selected cumulative probabilities are calculated and rounded to four decimals. For a 95% two-sided confidence interval, α = 0.05, α/2 = 0.025, and the target cumulative probability is 0.975. Locate 0.9750 inside the table, then read row 1.9 and column 0.06 to get z = 1.96 (the exact quantile is approximately 1.959964). Use z = 1.96 in n ≥ (zσ/E)², with σ = 1.6 minutes and E = 0.5 minute. Round up to 40 observations. The complete source table is linked in the README. Use View larger to magnify the table.</aside>
+    </section>
+    <section id="explore-t3-q2" data-question="2" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q2" data-title="T3 Q2 · Tire rotation times" aria-label="Slide 5: T3 Q2 · Tire rotation times">
       <h1 class="slide-heading">T3 Q2 · Tire rotation times</h1>
       <div class="web-panel">
         <div class="web-toolbar">
@@ -73,27 +80,32 @@
       </div>
       <aside class="notes">Round up to 40. Its margin is 0.496 minute, while 39 gives 0.502 minute.</aside>
     </section>
-    <section id="question-t3-q3" class="question-statement" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Tutorial Set 3 · Question 3" aria-label="Slide 5: Tutorial Set 3 · Question 3">
+    <section id="question-t3-q3" class="question-statement" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Tutorial Set 3 · Question 3" aria-label="Slide 6: Tutorial Set 3 · Question 3">
       <h1 class="slide-heading">Tutorial Set 3 · Question 3</h1>
       <img class="question-crop" src="assets/questions/set3-q3.png" width="952" height="298" style="left:98px;top:132px;width:952px;height:298px" alt="Tutorial Set 3, Question 3. A structure will rest on 100 piles. Nine test piles at random locations in the supporting soil were loaded to failure. Their capacities were 82, 75, 95, 90, 88, 92, 78, 85 and 80 tonnes. Assume a normal population. (a) Estimate the mean and variance of pile capacity at the site. (b) Find the 95% confidence interval for mean pile capacity, treating population variance as known and equal to the sample variance. (c) Find the 95% confidence interval for the mean when population variance is unknown." draggable="false">
       <aside class="notes">The sample consists of nine test piles; 100 is the number of piles in the structure. Their capacities sum to 765 tonnes. The sample mean is 85 tonnes, and the sample variance is 45.75 tonnes² (divide the sum of squared deviations by eight). For (b), treat 45.75 as known; for (c), it is an estimate from the sample.</aside>
     </section>
-    <section id="notes-t3-q3" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(b) · Mean with known variance" aria-label="Slide 6: Q3(b) · Mean with known variance">
+    <section id="notes-t3-q3" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(b) · Mean with known variance" aria-label="Slide 7: Q3(b) · Mean with known variance">
       <h1 class="slide-heading">Q3(b) · Mean with known variance</h1>
       <img class="question-crop" src="assets/lecture-notes/set3-q3-known-variance.png" width="694" height="520" style="left:98px;top:132px;width:694px;height:520px" alt="Normal confidence interval for a population mean with known variance. The endpoints are the sample mean plus or minus the normal critical value times sigma divided by the square root of n. The normal curve has area alpha over two shaded in each tail." draggable="false">
       <aside class="notes">Use the normal critical value 1.960 because part (b) tells us to treat the population variance as known. The standard error is √45.75 / 3 tonnes.</aside>
     </section>
-    <section id="notes-t3-q3-unknown" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(c) · Mean with unknown variance" aria-label="Slide 7: Q3(c) · Mean with unknown variance">
+    <section id="notes-t3-q3-z-table" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(b) · z-value table" aria-label="Slide 8: Q3(b) z-value table">
+      <h1 class="slide-heading">Q3(b) · Standard normal z-value table</h1>
+      <img class="question-crop" src="assets/tables/z-table-q3.svg" width="1084" height="550" style="left:98px;top:126px;width:1084px;height:550px" alt="Standard normal cumulative probabilities Φ(z) = P(Z ≤ z), excerpt with row labels 1.0–2.4 and column offsets 0.00–0.09. Highlighted row 1.9 plus column 0.06 gives z = 1.96; the intersection is 0.9750. Thus the upper tail is 0.025, giving a central probability of approximately 0.95 between −1.96 and +1.96. Q3(b) uses this normal critical value." draggable="false">
+      <aside class="notes">Source convention and lookup: CE2407A Statistical tables.pdf, page 1, Standard Normal Distribution Function. Selected cumulative probabilities are calculated and rounded to four decimals. For a 95% two-sided confidence interval, α = 0.05, α/2 = 0.025, and the target cumulative probability is 0.975. Locate 0.9750 inside the table, then read row 1.9 and column 0.06 to get z = 1.96 (the exact quantile is approximately 1.959964). Part (b) treats the population variance as known. Use z = 1.96 in the interval x̄ ± zσ/√n, with σ² = 45.75 tonnes² and n = 9. The complete source table is linked in the README. Use View larger to magnify the table.</aside>
+    </section>
+    <section id="notes-t3-q3-unknown" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(c) · Mean with unknown variance" aria-label="Slide 9: Q3(c) · Mean with unknown variance">
       <h1 class="slide-heading">Q3(c) · Mean with unknown variance</h1>
       <img class="question-crop" src="assets/lecture-notes/set3-q3-unknown-variance.png" width="684" height="520" style="left:98px;top:132px;width:684px;height:520px" alt="For a normal population of unknown variance, the endpoints are the sample mean plus or minus the t critical value times S divided by the square root of n. Each shaded tail contains alpha over two. The t critical value approaches the normal critical value as n increases." draggable="false">
       <aside class="notes">When the variance is estimated, use t with eight degrees of freedom. The 97.5th percentile is 2.306, compared with 1.960 for the normal distribution.</aside>
     </section>
-    <section id="notes-t3-q3-t-table" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(c) · t-value table" aria-label="Slide 8: Q3(c) t-value table">
+    <section id="notes-t3-q3-t-table" class="question-statement lecture-notes" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="Q3(c) · t-value table" aria-label="Slide 10: Q3(c) t-value table">
       <h1 class="slide-heading">Q3(c) · Student’s t-value table</h1>
       <img class="question-crop" src="assets/tables/t-table-q3.svg" width="1084" height="550" style="left:98px;top:126px;width:1084px;height:550px" alt="Student’s t table, selected upper-tail probabilities 0.10, 0.05, 0.025, 0.01 and 0.005. Degrees of freedom 1–29 and infinity are shown. For Q3(c), n = 9, so df = 8. Read the highlighted row 8 and column 0.025 to obtain 2.306. Each tail has probability 0.025. The confidence interval uses the margin 2.306 times S divided by √9." draggable="false">
       <aside class="notes">Source: CE2407A Statistical tables.pdf, page 2, Table 4. Values transcribed to three decimal places for five standard probability columns, retaining all source degrees of freedom. The table’s alpha is an upper-tail area; it is half the two-sided significance level. df = n − 1 = 8. The confidence interval uses the margin 2.306 times S divided by √9. Use View larger for a magnified table. The complete original table is linked in the repository README.</aside>
     </section>
-    <section id="explore-t3-q3" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="T3 Q3 · Pile capacities" aria-label="Slide 9: T3 Q3 · Pile capacities">
+    <section id="explore-t3-q3" data-question="3" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q3" data-title="T3 Q3 · Pile capacities" aria-label="Slide 11: T3 Q3 · Pile capacities">
       <h1 class="slide-heading">T3 Q3 · Pile capacities</h1>
       <div class="web-panel">
         <div class="web-toolbar">
@@ -108,22 +120,22 @@
       </div>
       <aside class="notes">The standard error is 2.25462 tonnes in both cases. The known-variance 95% z interval is (80.58, 89.42) tonnes. The unknown-variance t interval, with eight degrees of freedom, is (79.80, 90.20) tonnes. Ask why the second interval is wider.</aside>
     </section>
-    <section id="question-t3-q4" class="question-statement" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Tutorial Set 3 · Question 4" aria-label="Slide 10: Tutorial Set 3 · Question 4">
+    <section id="question-t3-q4" class="question-statement" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Tutorial Set 3 · Question 4" aria-label="Slide 12: Tutorial Set 3 · Question 4">
       <h1 class="slide-heading">Tutorial Set 3 · Question 4</h1>
       <img class="question-crop" src="assets/questions/set3-q4.png" width="952" height="194" style="left:98px;top:132px;width:952px;height:194px" alt="Tutorial Set 3, Question 4. Ten ocean wave periods in seconds were measured as 7.9, 6.5, 11.9, 8.9, 10.7, 7.7, 13.7, 11.4, 9.7 and 7.0. Assume a normal population. At the 0.05 significance level, test the null hypothesis that the mean period is 11 seconds against the alternative that it differs from 11 seconds." draggable="false">
       <aside class="notes">Ask which alternative is appropriate before looking at the sample. The question asks whether the mean differs from 11 s, so use both tails. For 10 independent observations from a normal population with unknown variance, use Student’s t with nine degrees of freedom.</aside>
     </section>
-    <section id="notes-t3-q4" class="question-statement lecture-notes" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Q4 · Testing the mean wave period" aria-label="Slide 11: Q4 · Testing the mean wave period">
+    <section id="notes-t3-q4" class="question-statement lecture-notes" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Q4 · Testing the mean wave period" aria-label="Slide 13: Q4 · Testing the mean wave period">
       <h1 class="slide-heading">Q4 · Testing the mean wave period</h1>
       <img class="question-crop" src="assets/lecture-notes/set3-q4-mean-test.png" width="728" height="520" style="left:98px;top:132px;width:728px;height:520px" alt="For a normal population with unknown variance, t equals the difference between the sample mean and the hypothesized mean divided by S over the square root of n. A table relates lower-, upper- and two-sided alternatives to their rejection regions. For the two-sided alternative reject below minus t critical or above plus t critical with alpha over two in each tail." draggable="false">
       <aside class="notes">Use the two-sided row. Split 0.05 between the two tails, then compare t = −1.961 with −2.262 and 2.262.</aside>
     </section>
-    <section id="notes-t3-q4-t-table" class="question-statement lecture-notes" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Q4 · t-value table" aria-label="Slide 12: Q4 t-value table">
+    <section id="notes-t3-q4-t-table" class="question-statement lecture-notes" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="Q4 · t-value table" aria-label="Slide 14: Q4 t-value table">
       <h1 class="slide-heading">Q4 · Student’s t-value table</h1>
       <img class="question-crop" src="assets/tables/t-table-q4.svg" width="1084" height="550" style="left:98px;top:126px;width:1084px;height:550px" alt="Student’s t table, selected upper-tail probabilities 0.10, 0.05, 0.025, 0.01 and 0.005. Degrees of freedom 1–29 and infinity are shown. For Q4, n = 10, so df = 9. Read the highlighted row 9 and column 0.025 to obtain 2.262. Each tail has probability 0.025. The two critical values are −2.262 and +2.262." draggable="false">
       <aside class="notes">Source: CE2407A Statistical tables.pdf, page 2, Table 4. Values transcribed to three decimal places for five standard probability columns, retaining all source degrees of freedom. The table’s alpha is an upper-tail area; it is half the two-sided significance level. df = n − 1 = 9. The two critical values are −2.262 and +2.262. Use View larger for a magnified table. The complete original table is linked in the repository README.</aside>
     </section>
-    <section id="explore-t3-q4" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="T3 Q4 · Ocean wave periods" aria-label="Slide 13: T3 Q4 · Ocean wave periods">
+    <section id="explore-t3-q4" data-question="4" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q4" data-title="T3 Q4 · Ocean wave periods" aria-label="Slide 15: T3 Q4 · Ocean wave periods">
       <h1 class="slide-heading">T3 Q4 · Ocean wave periods</h1>
       <div class="web-panel">
         <div class="web-toolbar">
@@ -138,27 +150,27 @@
       </div>
       <aside class="notes">The mean is 9.54 s, the sample standard deviation is 2.35429 s and the standard error is 0.74449 s. The test statistic is −1.961 with nine degrees of freedom. The critical values are ±2.262 and the two-sided p-value is 0.0815. At 5%, the data do not give sufficient evidence that the population mean differs from 11 s.</aside>
     </section>
-    <section id="question-t3-q5" class="question-statement" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Tutorial Set 3 · Question 5" aria-label="Slide 14: Tutorial Set 3 · Question 5">
+    <section id="question-t3-q5" class="question-statement" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Tutorial Set 3 · Question 5" aria-label="Slide 16: Tutorial Set 3 · Question 5">
       <h1 class="slide-heading">Tutorial Set 3 · Question 5</h1>
       <img class="question-crop" src="assets/questions/set3-q5.png" width="952" height="186" style="left:98px;top:132px;width:952px;height:186px" alt="Tutorial Set 3, Question 5. A bus company claims the standard deviation of bus arrival-time deviations is at most 1.5 minutes. Observations of one bus per day on the way to NUS over 20 mornings gave a sample standard deviation of 1.95 minutes. At the 0.05 significance level, test the boundary value of 1.5 minutes against a population standard deviation greater than 1.5 minutes." draggable="false">
       <aside class="notes">Does the bus company claim something about the mean or the spread? Test the boundary σ = 1.5 minutes against σ &gt; 1.5 minutes. The exact chi-square test assumes independent observations from a normal population.</aside>
     </section>
-    <section id="notes-t3-q5" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Testing a population variance" aria-label="Slide 15: Q5 · Testing a population variance">
+    <section id="notes-t3-q5" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Testing a population variance" aria-label="Slide 17: Q5 · Testing a population variance">
       <h1 class="slide-heading">Q5 · Testing a population variance</h1>
       <img class="question-crop" src="assets/lecture-notes/set3-q5-critical-regions.png" width="826" height="520" style="left:98px;top:132px;width:826px;height:520px" alt="Chi-square rejection regions for a normal population with hypothesized variance sigma zero squared. The lower-tailed alternative rejects in the lower alpha tail, the upper-tailed alternative rejects in the upper alpha tail, and a two-sided alternative places alpha over two in each tail. The subscripts in the table denote upper-tail probabilities." draggable="false">
       <aside class="notes">Use the upper-tailed row because the alternative is greater variability. In this table subscripts label upper-tail probabilities.</aside>
     </section>
-    <section id="notes-t3-q5-wafer" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Comparison: wafer thickness" aria-label="Slide 16: Q5 · Comparison: wafer thickness">
+    <section id="notes-t3-q5-wafer" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Comparison: wafer thickness" aria-label="Slide 18: Q5 · Comparison: wafer thickness">
       <h1 class="slide-heading">Q5 · Comparison: wafer thickness</h1>
       <img class="question-crop" src="assets/lecture-notes/set3-q5-wafer-example.png" width="811" height="520" style="left:98px;top:132px;width:811px;height:520px" alt="Worked upper-tailed test for silicon wafer thickness. The claimed standard deviation is 0.50 mil. Fifteen measurements give S = 0.64 mil. At the 5% level the critical value is 23.685 with 14 degrees of freedom. The statistic is 22.94, giving insufficient evidence that the variability exceeds the limit." draggable="false">
       <aside class="notes">This lecture example concerns wafers, not buses. Its statistic 22.94 falls below its cutoff 23.685, so it does not reject the null. Next apply the same test to the 20 bus arrival-time deviations and compare the decision.</aside>
     </section>
-    <section id="notes-t3-q5-chi-square-table" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Chi-square table" aria-label="Slide 17: Q5 chi-square table">
+    <section id="notes-t3-q5-chi-square-table" class="question-statement lecture-notes" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="Q5 · Chi-square table" aria-label="Slide 19: Q5 chi-square table">
       <h1 class="slide-heading">Q5 · Chi-square critical-value table</h1>
       <img class="question-crop" src="assets/tables/chi-square-table-q5.svg" width="1084" height="550" style="left:98px;top:126px;width:1084px;height:550px" alt="Chi-square critical values for degrees of freedom 1–30 and selected upper-tail probabilities 0.95, 0.05, 0.025, 0.01 and 0.005. For Q5, n = 20, so df = 19. The highlighted row 19 and column 0.05 meet at the critical value 30.144. This is a one-sided test, so the entire significance level 0.05 is in the upper tail. Reject when the test statistic exceeds 30.144." draggable="false">
       <aside class="notes">Source: CE2407A Statistical tables.pdf, page 3, Table 5. Selected degrees of freedom 1–30 and five upper-tail probability columns are shown. Values are checked against the chi-square distribution; corrections to the printed source are recorded in assets/tables/chi-square.json. For the normal-population variance test in Q5, the alternative is σ &gt; 1.5 minutes, so use the right tail. With n = 20, df = n − 1 = 19, and the upper-tail probability is 0.05. Read the critical value 30.144. The observed statistic 19(1.95/1.5)² = 32.11 exceeds the cutoff. Use View larger to magnify the table. The complete original table is linked in the README.</aside>
     </section>
-    <section id="explore-t3-q5" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="T3 Q5 · Bus arrival times" aria-label="Slide 18: T3 Q5 · Bus arrival times">
+    <section id="explore-t3-q5" data-question="5" data-tutorial="3" data-exercise-url="https://jiaruilei.github.io/CE2407A_Tutorial3/?question=q5" data-title="T3 Q5 · Bus arrival times" aria-label="Slide 20: T3 Q5 · Bus arrival times">
       <h1 class="slide-heading">T3 Q5 · Bus arrival times</h1>
       <div class="web-panel">
         <div class="web-toolbar">
@@ -177,7 +189,7 @@
 </main>
 <nav class="deck-controls" aria-label="Presentation controls">
   <button id="previous" type="button" aria-label="Previous slide" title="Previous (Left arrow)">‹</button>
-  <span id="counter" aria-live="polite">1 / 18</span>
+  <span id="counter" aria-live="polite">1 / 20</span>
   <button id="next" type="button" aria-label="Next slide" title="Next (Right arrow)">›</button>
   <span class="divider" aria-hidden="true"></span>
   <button id="ink-toggle" type="button" aria-expanded="false" aria-controls="ink-toolbar" title="Annotation tools">Ink</button>

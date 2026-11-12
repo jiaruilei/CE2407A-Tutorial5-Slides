@@ -13,6 +13,8 @@ This Week 13 deck covers Questions 2–5. Each section starts with the original 
 
 Use the arrow keys to move, **O** for the overview, and **F** for full screen. The section menu jumps to any question, lecture snapshot, or exercise. **View larger** enlarges a question or snapshot; **Enlarge exercise** expands the live calculator. **Ink** enables drawing, highlighting, erasing, and undo. Ink is saved in the presenting browser.
 
+Separate t-table pages follow the notes for [Q3(c)](https://jiaruilei.github.io/CE2407A-Tutorial5-Slides/#/notes-t3-q3-t-table) and [Q4](https://jiaruilei.github.io/CE2407A-Tutorial5-Slides/#/notes-t3-q4-t-table). They highlight the 0.025 upper-tail column and the relevant degrees of freedom: 8 (2.306) and 9 (2.262). The 17-slide deck uses five standard probability columns and all degrees of freedom from the course table. See the [complete original t table](assets/tables/course-t-table.png) or [editable values](assets/tables/student-t.json). The vector tables can be rebuilt with `python scripts/render-t-tables.py`.
+
 <details>
 <summary>Instructor checkpoints (answers)</summary>
 
